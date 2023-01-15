@@ -5,11 +5,12 @@
 #
 # Name          : Cherniak Sviatoslav 
 # Collaborators : No colabs
-# Time spent    : <total time>
+# Time spent    : 2 hours
 
 import math
 import random
 import string
+
 
 VOWELS = 'aeiou'
 CONSONANTS = 'bcdfghjklmnpqrstvwxyz'
@@ -448,12 +449,13 @@ def play_game(word_list):
     for ji in range (number_of_hands):
         
         hand = deal_hand(HAND_SIZE)
-        print('Current hand: ', end = '')
-        display_hand(hand)
+        
     
         
 
         if letter_switches == 1:
+            print('Current hand: ', end = '')
+            display_hand(hand)
             answer_1 = input('Would you like to substitute a letter? ')
 
             if answer_1.lower() == 'yes':
